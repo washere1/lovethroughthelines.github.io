@@ -27,6 +27,8 @@
   --olive:    #929434;   /* green accent */
   --clay:     #D6779B;   /* primary CTA / warm rose */
   --clay-dark:#C27392;   /* CTA hover / darker rose */
+  
+  --clay-mod: #DD8EAC;
 
   /* text colors */
   --ink:      #000000;   /* earthy brown for headings/text (from palette) */
@@ -146,9 +148,13 @@ h2{ font-size: clamp(1.8rem, 3.5vw, 2.6rem); line-height: 1.15; margin-bottom: .
 ------------------------------------------------------- */
 .hero{
   background:
-    linear-gradient(180deg, var(--lilac), var(--lilac));
+    linear-gradient(180deg, var(--blue), var(--blue));
   position:relative;
   padding: clamp(3rem, 6vw, 6rem) 0 2rem;
+  background:
+    url("https://i.postimg.cc/7Yhg7WQZ/seamless-vertical-stripe-pattern-vector-15636722-Edited.png") no-repeat right/50% 100%,
+    var(--clay-mod);
+  
 }
 .hero-inner{
   display:grid; grid-template-columns: .95fr .85fr; gap: clamp(2rem, 4vw, 4rem);
@@ -257,7 +263,7 @@ h2{ font-size: clamp(1.8rem, 3.5vw, 2.6rem); line-height: 1.15; margin-bottom: .
 /* -------------------------------------------------------
    Testimonials
 ------------------------------------------------------- */
-.testimonials{ background: var(--blue); }
+.testimonials{ background: linear-gradient(180deg, var(--shell), #fff); }
 .testi-header{ text-align:center; margin-bottom:1.6rem; }
 .slider{ position:relative; max-width: 760px; margin: 0 auto; }
 .slide{
