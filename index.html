@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +11,8 @@
    Google Fonts
 ------------------------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Glegoo:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Glegoo:wght@400;700&display=swap');
 
 /* -------------------------------------------------------
    Color System — updated to your palette
@@ -46,14 +49,14 @@
 *{ box-sizing: border-box; margin:0; padding:0; }
 html{ scroll-behavior:smooth; }
 body{
-  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-family: 'Amiko', system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   background: var(--paper);
   color: var(--ink);
   line-height: 1.65;
 }
 
 h1, h2, h3, h4{
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Glegoo', Georgia, serif;
   color: var(--ink);
 }
 h1{ font-size: clamp(2.2rem, 5vw, 4rem); line-height: 1.1; }
@@ -98,7 +101,7 @@ h2{ font-size: clamp(1.8rem, 3.5vw, 2.6rem); line-height: 1.15; margin-bottom: .
   height:72px;
 }
 .brand{
-  font-family:'Playfair Display', serif;
+  font-family:'Glegoo', serif;
   font-weight:700;
   font-size:1.3rem;
   color: var(--ink);
@@ -234,7 +237,7 @@ h2{ font-size: clamp(1.8rem, 3.5vw, 2.6rem); line-height: 1.15; margin-bottom: .
 .stat-card:hover{ transform: translateY(-4px); box-shadow: var(--shadow-md); }
 .icon{ font-size: 1.8rem; margin-bottom:.4rem; color: var(--clay); }
 .num{
-  font-family:'Playfair Display', serif; font-weight:700;
+  font-family:'Glegoo', serif; font-weight:700;
   font-size: clamp(2rem, 4vw, 3rem); color: var(--clay);
 }
 .label{ color:var(--mute); margin-top:.1rem; }
@@ -293,7 +296,7 @@ figcaption{ margin-top:.8rem; color:var(--mute); font-weight:600; }
 .footer-grid{
   display:grid; grid-template-columns: 1.4fr 1fr 1fr; gap:2rem; align-items:start;
 }
-.footer h4{ font-family:'Playfair Display', serif; margin-bottom:.6rem; color: var(--paper); }
+.footer h4{ font-family:'Glegoo', serif; margin-bottom:.6rem; color: var(--paper); }
 .footer .mark{ color:#fff; }
 .muted{ color: rgba(255,255,255,0.8); }
 .links{ list-style:none; }
@@ -419,19 +422,19 @@ figcaption{ margin-top:.8rem; color:var(--mute); font-weight:600; }
 
       <div class="stats">
         <div class="stat-card">
-          <div class="icon" aria-hidden="true">✉️</div>
-          <div class="num" data-target="10000">0</div>
-          <p class="label">Letters Sent</p>
+          <div class="icon" aria-hidden="true">📚</div>
+          <div class="num" data-target="1000">0</div>
+          <p class="label">Books Donated</p>
+        </div>
+        <div class="stat-card">
+          <div class="icon" aria-hidden="true">🏫</div>
+          <div class="num" data-target="10">0</div>
+          <p class="label">Schools Reached</p>
         </div>
         <div class="stat-card">
           <div class="icon" aria-hidden="true">🤝</div>
-          <div class="num" data-target="5000">0</div>
-          <p class="label">People Connected</p>
-        </div>
-        <div class="stat-card">
-          <div class="icon" aria-hidden="true">🌍</div>
           <div class="num" data-target="15">0</div>
-          <p class="label">Countries Reached</p>
+          <p class="label">Active Chapters</p>
         </div>
       </div>
     </div>
